@@ -1,6 +1,8 @@
 import task3.Turtle;
 import task4.Receipt;
 import task5.ConversionTest;
+import task6.Fields;
+
 import java.io.PrintStream;
 import java.util.Formatter;
 
@@ -66,6 +68,20 @@ public class Main {
         conversionTest.test("e");
         conversionTest.test("x");
         conversionTest.test("h");
+
+
+        System.out.println();
+
+        /*
+        Exercise 6: (2) Create a class that contains int, long, float and double fields. Create a
+        toString( ) method for this class that uses String.format( ), and demonstrate that your
+        class works correctly.
+         */
+
+
+        Fields fields = new Fields();
+
+        fields.print();
 
 
         /*
