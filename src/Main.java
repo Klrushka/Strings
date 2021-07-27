@@ -1,6 +1,10 @@
 import task3.Turtle;
+import task4.Receipt;
+import task5.ConversionTest;
 
+import java.io.Console;
 import java.io.PrintStream;
+import java.util.Collections;
 import java.util.Formatter;
 
 public class Main {
@@ -24,12 +28,51 @@ public class Main {
         terry.move(3, 3);
 
 
+        System.out.println();
+
 
         /*
-        
+        Exercise 4: (3) Modify Receipt.java so that the widths are all controlled by a single set of
+        constant values. The goal is to allow you to easily change a width by changing a single value
+        in one place.
          */
 
 
+        Receipt receipt = new Receipt();
+        receipt.printTitle();
+        receipt.print("Jack’s Magic Beans", 4, 4.25);
+        receipt.print("Princess Peas", 3, 5.1);
+        receipt.print("Three Bears Porridge", 1, 14.29);
+
+
+        receipt.setWidth(15,5,10);  // you can set width in this method, now defaults
+        receipt.printTotal();
+
+        System.out.println();
+
+
+        /*
+        Exercise 5: (5) For each of the basic conversion types in the above table, write the most
+        complex formatting expression possible. That is, use all the possible format specifiers
+        available for that conversion type.
+         */
+
+        ConversionTest conversionTest = new ConversionTest();
+
+
+        conversionTest.test("d");
+        conversionTest.test("c");
+        conversionTest.test("b");
+        conversionTest.test("s");
+        conversionTest.test("f");
+        conversionTest.test("e");
+        conversionTest.test("x");
+        conversionTest.test("h");
+
+
+        /*
+
+         */
 
 
     }
