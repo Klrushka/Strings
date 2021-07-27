@@ -2,9 +2,7 @@ import task3.Turtle;
 import task4.Receipt;
 import task5.ConversionTest;
 
-import java.io.Console;
 import java.io.PrintStream;
-import java.util.Collections;
 import java.util.Formatter;
 
 public class Main {
