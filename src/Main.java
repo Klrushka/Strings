@@ -1,5 +1,6 @@
 import task10.Expressions;
 import task19.ClassNamesInSourceCode;
+import task20.ClassWithFields;
 import task3.Turtle;
 import task4.Receipt;
 import task5.ConversionTest;
@@ -127,8 +128,15 @@ public class Main {
 
 
         /*
-
+        Exercise 20: (2) Create a class that contains int, long, float and double and String
+        fields. Create a constructor for this class that takes a single String argument, and scans that
+        string into the various fields. Add a toString( ) method and demonstrate that your class
+        works correctly.
          */
+
+        ClassWithFields classWithFields = new ClassWithFields("12 12345678 12 3 hi");
+
+        System.out.println(classWithFields);
 
 
     }
