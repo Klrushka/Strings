@@ -1,10 +1,14 @@
+import task10.Expressions;
+import task19.ClassNamesInSourceCode;
 import task3.Turtle;
 import task4.Receipt;
 import task5.ConversionTest;
 import task6.Fields;
+import task7.CheckCase;
 
 import java.io.PrintStream;
 import java.util.Formatter;
+
 
 
 public class Main {
@@ -45,7 +49,7 @@ public class Main {
         receipt.print("Three Bears Porridge", 1, 14.29);
 
 
-        receipt.setWidth(15,5,10);  // you can set width in this method, now defaults
+        receipt.setWidth(15, 5, 10);  // you can set width in this method, now defaults
         receipt.printTotal();
 
         System.out.println();
@@ -82,6 +86,44 @@ public class Main {
         Fields fields = new Fields();
 
         fields.print();
+
+        System.out.println("\n");
+
+        /*
+        Exercise 7: (5) Using the documentation for java.util.regex.Pattern as a resource,
+        write and test a regular expression that checks a sentence to see that it begins with a capital
+        letter and ends with a period.
+         */
+
+
+        CheckCase checkCase = new CheckCase();
+
+        System.out.println(checkCase.check("Good day."));
+
+        /*
+        Exercise 10: (2) For the phrase "Java now has regular expressions" evaluate whether the
+        following expressions will find a match:
+         */
+
+        Expressions expressions = new Expressions();
+
+        for (int i = 0; i < 9; i++){
+            System.out.println("Regex: \"" + expressions.getRegexes()[i] + "\" is " + expressions.test(expressions.getRegexes()[i]));
+        }
+
+
+        System.out.println();
+
+
+        /*
+        Exercise 19: (8) Building on the previous two exercises, write a program that examines
+        Java source code and produces all the class names used in a particular program.
+         */
+
+
+        ClassNamesInSourceCode names = new ClassNamesInSourceCode();
+
+        System.out.println(names.findAllClassNames());
 
 
         /*

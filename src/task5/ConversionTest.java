@@ -13,13 +13,13 @@ public class ConversionTest {
         System.out.println("------------------------------------------------"+
                 "\nTesting conversion character " + conversion + "! \n");
 
-        for (int i = 0; i < objects.length; i++) {
+        for (Object object : objects) {
             try {
-                System.out.print(objects[i].getClass().getSimpleName() + ": ");
-                formatter.format("%-5" + conversion, objects[i]);
+                System.out.print(object.getClass().getSimpleName() + ": ");
+                formatter.format("%-5" + conversion, object);
                 System.out.println();
             } catch (Exception e) {
-                System.out.println("Can not use conversion with " + objects[i].getClass().getSimpleName());
+                System.out.println("Can not use conversion with " + object.getClass().getSimpleName());
             }
         }
     }
