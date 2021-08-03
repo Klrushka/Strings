@@ -126,6 +126,10 @@ public class Main {
 
         System.out.println(names.findAllClassNames());
 
+        class Test {
+
+        }
+
 
         /*
         Exercise 20: (2) Create a class that contains int, long, float and double and String
